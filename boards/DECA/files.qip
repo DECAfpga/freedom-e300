@@ -1,0 +1,14 @@
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) pll/pll_sys/pll_sys.qip ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) pll/pll_sys_32m/pll_sys_32m.qip ]
+
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/SRLatch.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/PowerOnResetFPGAOnly.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/plusarg_reader.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/Freedom_E300_Wrapper.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/clkdivider.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/BootROM.v ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../e300_rtl/AsyncResetReg.v ]
+
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) E300.sdc ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) E300.v ]
